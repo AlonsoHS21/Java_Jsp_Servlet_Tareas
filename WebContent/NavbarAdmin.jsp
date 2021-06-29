@@ -27,6 +27,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Recover password</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Task</a>
+        </li>
       </ul>
     </div>
   </div>
