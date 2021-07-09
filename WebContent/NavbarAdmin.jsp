@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light"> <!-- TODO:Cambiar el tipo de letra -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <!-- TODO:Cambiar el tipo de letra -->
   <div class="container-fluid">
     <a class="navbar-brand">Task Manager</a> <!-- Solo va a ser texto plano -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
           <a class="nav-link" href="#">Recover password</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Task</a>
+          <a class="nav-link" href="ServletTareas">Task</a>
         </li>
       </ul>
     </div>
