@@ -38,7 +38,7 @@ create table if not exists tareas (
     idTipoTarea int not null,
     fechaCreacion date not null,
     fechaCierre date null, #Es opcional pero solo para idTipoTarea de tipo sin fecha de cierre
-    nota varchar(45) not null,
+    descripcion varchar(45) not null,
     Primary Key(idTarea,dni)
 );
 create table if not exists tiposDeTareas (
@@ -57,3 +57,7 @@ alter table usuarios add foreign key (idTipoUsuario) references tiposDeUsuarios 
 # ---- Tareas ----
 alter table tareas add foreign key (dni) references datosPersonales (dni);
 alter table tareas add foreign key (idTipoTarea) references tiposDeTareas (idTipoTarea);
+
+# --------------------------------------------- INSERTS INTO ---------------------------------------------
+insert into tiposDeTareas (nombre) values ("No urgente");
+insert into tareas (dni,idTipoTarea,fechaCreacion,fechaCierre,descripcion) values (94302637,1,"01/01/2021","01/01/2021","Esta es una tarea de prueba");
