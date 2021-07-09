@@ -8,6 +8,7 @@ public class Tarea {
 	private TipoTarea tipoDeTarea;
 	private Date fechaCreacion;
 	private Date fechaCierre;
+	private String descripcion;
 	
 	public Tarea() { //Creo es contructor por las dudas
 		dni = 0;
@@ -46,6 +47,12 @@ public class Tarea {
 
 	public void setFechaCierre(Date fechaCierre) {
 		this.fechaCierre = fechaCierre;
+	}
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+	public String getDescripcion() {
+		return descripcion;
 	}
 	
 }
