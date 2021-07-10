@@ -19,6 +19,9 @@
 <!-- Include Navbar for Admins -->
 <%@include file="NavbarAdmin.jsp" %>
 
+<!--  Despues de tanto buscar encontre la solucion POR FIN!! -->
+<!-- https://stackoverflow.com/questions/32602992/why-i-am-getting-class-not-found-exception-for-class-fornamecom-mysql-jdbc-dri -->
+
 </head>
 <body>
 	<script>
@@ -72,8 +75,8 @@
             	for(Tarea t : listaTareas) { %>
             <tr>
             	<td class="dt-body-center"><%=t.getDni() %></td>
-            	<td class="dt-body-center"><%=t.getFechaCreacion().getTime() %></td>
-            	<td class="dt-body-center"><%=t.getFechaCierre().getTime() %></td>
+            	<td class="dt-body-center"><%=t.getFechaCreacion() %></td>
+            	<td class="dt-body-center"><%=t.getFechaCierre() %></td>
             	<td class="dt-body-center"><%=t.getDescripcion() %></td>
             	<td class="dt-body-center"><%=t.getTipoDeTarea().getNombre() %></td>
             <tr>
