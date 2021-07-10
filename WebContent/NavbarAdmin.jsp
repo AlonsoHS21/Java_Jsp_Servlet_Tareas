@@ -28,7 +28,7 @@
           <a class="nav-link" href="#">Recover password</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ServletTareas">Task</a>
+          <a class="nav-link" href="Tareas.jsp">Task</a>
         </li>
       </ul>
     </div>
