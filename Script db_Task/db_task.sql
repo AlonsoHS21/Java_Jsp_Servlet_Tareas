@@ -63,7 +63,7 @@ insert into tiposDeTareas (nombre) values ("No urgente");
 
 insert into nacionalidades (nombre) values ("Peruano");
 
-insert into tiposDeUsuario (descripcion) values ("Admin");
+insert into tiposDeUsuarios (descripcion) values ("Admin");
 insert into tiposDeUsuarios (descripcion) values ("Cliente");
 
 insert into usuarios (idTipoUsuario,nombreUsuario,contrasenia) values (1,"AlonsoHS20","123");
@@ -72,3 +72,5 @@ insert into datosPersonales (dni,idUsuario,nombre,apellido,sexo,fechaNacimiento,
 values (94302637,1,"Alonso","Huarcaya","Masculino","1999/04/01",1123053847,"alonsohs20@gmail.com",1);
 
 insert into tareas (dni,idTipoTarea,fechaCreacion,fechaCierre,descripcion) values (94302637,1,"2021/01/01","2021/01/01","Esta es una tarea de prueba");
+
+Select * From tareas t inner join tiposDeTareas tt on t.idTipoTarea = tt.idTipoTarea

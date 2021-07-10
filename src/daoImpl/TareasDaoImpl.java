@@ -12,7 +12,7 @@ import entity.TipoTarea;
 
 public class TareasDaoImpl implements TareasDao{
 	
-	private static final String traerListaDeTareas = "Select * From tareas t inner join tiposDeTarea tt on t.idTipoTarea = tt.idTipoTarea";
+	private static final String traerListaDeTareas = "Select * From tareas t inner join tiposDeTareas tt on t.idTipoTarea = tt.idTipoTarea";
 
 	@Override
 	public ArrayList<Tarea> listaDeTareas() {
